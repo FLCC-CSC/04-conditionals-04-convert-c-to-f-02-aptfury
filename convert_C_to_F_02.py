@@ -16,17 +16,17 @@
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
 print("  1. Convert from Celsius to Fahrenheit")
-print("  2. Convert from Fahrenheit to Celsius")
+print("  2. Convert from Fahrenheit to Celsius\n")
 
 menu_selection: int = int(input("Please choose from the above menu: "))
 temperature: float = float(input("Enter a temperature to convert: "))
 
 if menu_selection == 1:
     result: float = temperature * 9/5 + 32
-    print(f"{temperature} degrees Celsius is {result} degrees Fahrenheit.")
+    print(f"\n{temperature} degrees Celsius is {result} degrees Fahrenheit.")
 elif menu_selection == 2:
     result: float = (temperature - 32) * 5/9
-    print(f"{temperature} degrees Fahrenheit is {result} degrees Celsius.")
+    print(f"\n{temperature} degrees Fahrenheit is {result} degrees Celsius.")
 
 ########### END YER CODE ABOVE THIS LINE ###########
 
