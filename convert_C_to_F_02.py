@@ -1,8 +1,8 @@
 # FILE NAME - convert_C_to_F_02.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Blake Lemarr
+# DATE: 03/02/2026
+# BRIEF DESCRIPTION: A program that converts values from C to F or F to C depending on user input.
 
 
 
@@ -14,15 +14,19 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
+print("===== Temperature Converter =====\n")
+print("  1. Convert from Celsius to Fahrenheit")
+print("  2. Convert from Fahrenheit to Celsius\n")
 
+menu_selection: int = int(input("Please choose from the above menu: "))
+temperature: float = float(input("Enter a temperature to convert: "))
 
-
-
-
-
-
-
-
+if menu_selection == 1:
+    result: float = temperature * 9/5 + 32
+    print(f"\n{temperature} degrees Celsius is {result} degrees Fahrenheit.")
+elif menu_selection == 2:
+    result: float = (temperature - 32) * 5/9
+    print(f"\n{temperature} degrees Fahrenheit is {result} degrees Celsius.")
 
 ########### END YER CODE ABOVE THIS LINE ###########
 
@@ -93,7 +97,8 @@ Enter a temperature to convert: -40
 
 1. What is one lesson you learned in this lab?
 
-
+I did learn more about how to offer menus for users in the terminal.
+I also learned that -40F equals -40C, which is fascinating!
 
 
 
